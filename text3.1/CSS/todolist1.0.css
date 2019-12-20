@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url('../image/background.jpg');
+    width: 100%;
+}
+
+div.totle {
+    /* border-style: double;
+    border-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+div.totle1 {
+    /* border-style: double;
+    border-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* div.saying {
+    width: 30%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+} */
+
+#title {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.7);
+    /* font-style: initial; */
+    width: 300px;
+}
+
+.input {
+    font-size: 0;
+    width: 600px;
+    height: 60px;
+    box-shadow: 0 0px 30px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1), inset 0 -3px 5px rgba(0, 0, 0, 0.03);
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.input input {
+    outline: none;
+    height: 80%;
+    width: 100%;
+    margin-left: 15px;
+    border: none;
+    font-size: 25px;
+    width: calc(100% - 66px);
+    background-color: transparent;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.clone {
+    position: relative;
+    width: 550px;
+    font-size: 24px;
+    line-height: 35px;
+    display: flex;
+    display: none;
+    border-bottom: 1px solid #ededed;
+    align-items: center;
+    word-break: break-all;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.clone div.cha {
+    cursor: pointer;
+    display: none;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 15px;
+    background-image: url(../image/cha.png);
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    background-position: center;
+}
+
+.clone:hover div.cha {
+    display: block;
+}
+
+.clone .reinput {
+    border: 1px solid rgba(78, 78, 78, 0.288);
+    border-radius: 20px;
+    outline: none;
+    height: 60px;
+    margin-left: 66px;
+    font-size: 25px;
+    width: calc(100% - 66px);
+    background-color: transparent;
+}
+
+.clone>span:nth-of-type(1) {
+    line-height: 66px;
+    width: 66px;
+    height: 66px;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.clone .text {
+    display: block;
+    padding-right: 32px;
+    flex-grow: 1;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.clone span:nth-of-type(1) span {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    width: 33px;
+    height: 33px;
+    border: 1px solid rgba(0, 0, 0, 0.377);
+    border-radius: 50%;
+}
+
+
+/* 打勾的状态 */
+
+.gou {
+    cursor: pointer;
+    background-image: url(../image/gou.png);
+    background-position: center;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+
+
+/* 已完成项目显示 */
+
+.totle .clone .line_through {
+    text-decoration: line-through;
+    color: rgba(6, 61, 13, 0.322);
+    transition: .3s;
+}
+
+
+/* .saying div.input_s {
+    width: 100%;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.input_s textarea {
+    width: 80%;
+    height: 80%;
+    background-color: transparent;
+} */
